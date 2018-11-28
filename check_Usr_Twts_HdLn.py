@@ -21,10 +21,10 @@ In this method we'll check tweet activity in 4 ways:
 
 def main():
     #Auth api
-    consumer_key="GVHhMXYiyj1fHExAu3Bbda3i9"
-    consumer_secret="j2IP4ocmoqesE9HS9yMey1HROXj6C6MIlnJds2zv2TMacPLVEJ"
-    access_token="798242515833016321-xAAnsVIMJU1rP5cEpmVXxwQE0Jhdw0p"
-    access_token_secret="DkkwatnPO6sI9JIIhogAAXDNPy34mcZrxtbu3W7EOPDOO"
+    consumer_key=""
+    consumer_secret=""
+    access_token=""
+    access_token_secret=""
     
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
