@@ -50,6 +50,9 @@ def main():
     for i in range(len(nameSet)):
         if int(testsfailed[i]) == 6:
             botish.append(nameSet[i])
+    #Remove duplicate screen names
+    boitsh = Remove(botish)        
+    
     ##print(len(botish)) should be 3314
     csvIn_file.close()
     
@@ -106,6 +109,13 @@ def main():
     csvOut_file.close()
 
 #Methods
+def Remove(duplicate): 
+    final_list = [] 
+    for num in duplicate: 
+        if num not in final_list: 
+            final_list.append(num) 
+    return final_list
+
 def assessRegularity(date_list):
     check = False
     #We have a list of datetime objects e.g. 'Thu Jul 28 00:08:39 +0000 2016'
