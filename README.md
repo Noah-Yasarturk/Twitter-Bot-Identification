@@ -1,5 +1,5 @@
 # US_Elections_4_Twits
-Implementing basic Twitter scraping techniques, I hope to be able to predict the outcome of U.S. elections. This was initiated in 2016 but continued in 2018.
+Implementing basic Twitter scraping techniques, I hoped to be able to predict the outcome of U.S. elections. This was initiated in 2016 but continued in 2018.
 
 
-I am currently (Fall 2018) renewing this project in much greater depth. This time, i hope to predict the outcomes of the House races for the U.S. 2018 midterms. My hope is to be able to mine Twitter for a week, separate suspected bot accounts from the rest, score the Tweets based upon a variety of factors, and generate a graphic depicting red and blue states as per my prediction. I'll attempt to separate the predicted map with and without the suspected bots so as to understand the potential impact of the bots. I am conducting this project under the mentorship of Dr. Wu and in collaboration with Richard Marquet.
+The project quickly changed to identifying Twitter bots through multiple tests. Tweets are initially scraped using Stream3.py, preprocessed using Preprocess.py into csvs, and then finally tested through check_Usr_Twts_HdLn.py. Preprocess.py checks 7 tests using only the scraped tweets and creates csvs to keep track of all screen names that trigger any of the tests along with which tests they trigger. check_Usr_Twts_HdLn.py checks the master csv created in Preprocess.py to see if any of its screen names trigger 4 additonal, more rigorous tests.
