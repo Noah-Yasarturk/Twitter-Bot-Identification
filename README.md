@@ -1,13 +1,16 @@
 # Twitter Bot Identification
 This is a follow-up to a project conducted during the 2016 election in which I sought to predict the outcomes of the 2016 Presidential Election by streaming Twitter data, analyzing the data by state to determine if tweets were Pro-Clinton/Anti-Trump or Pro-Trump/Anti-Clinton, and reporting an overall evaluation of whether a given state would vote red or blue.
 
-This project's current iteration focused on streaming election-related Twitter interactions in the weeks leading up to the 2018 midterms and implementing n tests to funnel the most bot-like accounts to our report.
+This project's current iteration focused on streaming election-related Twitter interactions in the weeks leading up to the 2018 midterms and implementing 12 tests to funnel the most bot-like accounts to our csv report. The flow the programs should take is as thus:
+1. Stream_Election_twts.py to stream election tweets to your local machine,
+2. Preprocess_Twts.py to conduct initial 8 tests,
+3. check_Twts.py to conduct final 4 tests on those that fail a user-defined number of tests from the prior step (default is 6).
 
 In the future, I hope to further analyze the results test-by-test to develop a decision tree and further automate the bot identification process.
 
 
 The tests are as such:
-Preprocess.py
+Preprocess_Twts.py
 1. Check if location provided by account
 2. Check if description provided by account
 3. Check if profile picture is default profile picture
