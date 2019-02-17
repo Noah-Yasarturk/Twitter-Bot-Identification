@@ -23,7 +23,7 @@ check_Twts.py
 Accounts that failed 6/8 of the above tests would be additionally processed through the following tests.
 1. Tweet text identical to included article's headline
 2. Identical reposted tweets
-3. >75% similar reposted tweets
+3. Greater than 75% similar reposted tweets
 4. Use of more than 2 languages in tweet content
 
 For more information on how automated social media accounts are affecting our democracy, please check out the work of Renee Diresta:
